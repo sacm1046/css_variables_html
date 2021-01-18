@@ -1,0 +1,81 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('https://i.pinimg.com/originals/0a/4d/cb/0a4dcb92fa2d3c601b58d72720d6bec4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+:root {
+    --primary: #55ADEE;
+    --secondary: rgb(27, 27, 27);
+    --ligth: white;
+    --transparent: transparent;
+}
+
+h1, h3{
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Estilos de navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary);
+    padding: 0 10px;
+}
+
+.navbar__brand{
+    width: 70px;
+}
+
+.navbar__links{
+    list-style: none;
+    display: flex;
+}
+
+.navbar__links > li{
+    margin: 0 20px;
+}
+
+.navbar__links > li > a{
+    text-decoration: none;
+    color:var(--primary);
+    transition: 200ms ease-in-out;
+}
+
+.navbar__links > li > a:hover{
+    color:var(--ligth);
+}
+
+/* Estilos del banner */
+
+.banner{
+    width: 100%;
+    height: 400px;
+    background-color: var(--transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 50px;
+}
+
+.section{
+    width: 100%;
+    height: 300px;
+    background-color: var(--transparent);
+}
+
+.s1{
+    background-color: var(--primary);;
+}
